@@ -1,0 +1,37 @@
+Requirements:
+     python 3.0 and above installed on a linux machine.
+     
+No installation. Copy all files to local system. Make sure to have all files in same folder.
+
+Execution:
+    1. Open command prompt
+    2. The program takes as input a filename which has sanskrit sentences in it. This file should be created beforehand and populated with input data. 
+NOTE: Sanskrit input can be given in many ways. Use a web service like Google Input Tools to get the Devanagiri script or any native appliction like Character Map on Ubuntu Linux.
+    3. compile and execute like this:
+		$ python3 parser.py inputfile
+    4. The output will be displayed for every sentence in file.
+    
+Sample output:
+वृक्षात् फलं पतति
+2 ('Noun', 'Neut', 'Nom', 'Sing') ('from', 2)
+1 ('Noun', 'Masc', 'Abl', 'Plu') ('s', 3)
+3 ('Verb', 'Paras', 'Pres', 'Thir', 'Sing') ('v', 2)
+
+Each field is as follows:
+Word number- the position of word in sentence
+Attributes-
+	shows Noun, Verb or Pronoun.
+	For Noun the remaining attributes are Gender, Vibhakti/Case, Plural form
+	For Verb the remaining attributes are Pada, Tense, Person, Plural form
+Relations-
+	gives relation name and the word it is related to.
+	
+NOTE:
+As the dictionary is not complete yet, sometimes the input sentence may have words not recognized by parser. Then the message that appears is:
+		The following words were not found in dictionary:
+		1वीरः
+
+Some tested sentenced are present in "in" file.
+
+     
+

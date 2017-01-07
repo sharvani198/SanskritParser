@@ -1,0 +1,34 @@
+There are many files in this folder which represent the dictionary for the parser.
+Each file has a word which is encoded according to our own format.
+In unicode, Sanskrit characterset begins at codepoint 2304.
+The encoding we use converts each letter in the word to its unicode value and subtracts 2304. Also the format forces each letter to be represented in 3 digit code.
+After encoded word is attribute set.
+
+nouns : 
+Encoding-of-stem-word End-letter Gender
+	End-letter means if the stem end with A,E,U and so on. 0 means a-ending.
+	Gender values are 0-Masculine, 1-Feminine, 2-Neutral
+	
+nounend:
+Encoding-of-end-word End-letter Gender Vibhakti Number
+	Vibhakti has values from 1-7
+	Number is 1-Sigular, 2-Dual, 3-Plural
+	
+pronouns:
+Encoding-of-word Gender Vibhakti Number
+	Gender: apart from 0,1,2 for M,F,N 3-asmad , 4-yushmad
+
+adjectives:
+Encoding-of-stem-word End-letter Gender
+
+verbs:
+Encoding-of-stem-word 
+
+verbend:
+Encoding-of-end-word Pada Tense Person Number
+	Pada can be 1-Parasmipada, 2-Atmanepada, 3-Ubhayapada
+	Tense starts with 1-Present, 2-Past, 3-Future and so on
+	Person: 1-Third Person, 2-Second Person, 3-First Person
+	
+
+ 

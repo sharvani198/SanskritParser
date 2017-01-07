@@ -1,0 +1,23 @@
+This is for setup of the Web user interface of the parser program
+
+Requirements:
+	Eclipse IDE (Tested with version 4.4.2)
+	PyDev plugin (Tested with version 4.0.0)
+		This can be installed by adding http://pydev.org/updates to available sites in Install New Software option.
+	Django framework (Tested with version 1.8)
+		Follow the steps on http://www.djangoproject.com/.
+	Python 2.7 (not 3.4 version)
+	
+Installation:
+	Import existing project parserweb into workspace.
+
+Execution
+	Run as a PyDev Django app .
+	If successful then the server will be running at localhost:8000
+	Access the address in browser.
+	
+	
+NOTE:
+Do not modify any source files like manage.py
+
+ 
